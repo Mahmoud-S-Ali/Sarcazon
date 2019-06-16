@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    tools:context="com.joyapeak.sarcazon.ui.credits.CreditsActivity">
+
+    <include layout="@layout/appbar_general" />
+
+    <TextView
+        style="@style/Text_Body3_Regular_Sec_Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center"
+        android:text="@string/credits_description" />
+
+    <include layout="@layout/divider_light"
+        android:layout_width="@dimen/custom_match_parent"
+        android:layout_height="1dp"
+        tools:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"/>
+
+    <!-- Should be a recyclerview in the future -->
+    <ScrollView
+        android:layout_width="@dimen/custom_match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_width="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_medium">
+
+            <TextView
+                style="@style/Text_Body3_Bold_Sec_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dislike Icon" />
+
+            <TextView
+                style="@style/Text_Caption_Regular_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColorLink="@color/white_op87"
+                android:text="@string/credit_dislike_icon"
+                android:textColor="@color/white_op50" />
+
+            <TextView
+                style="@style/Text_Body3_Bold_Sec_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="Comments Icon" />
+
+            <TextView
+                style="@style/Text_Caption_Regular_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColorLink="@color/white_op87"
+                android:text="@string/credit_comment_icon"
+                android:textColor="@color/white_op50" />
+
+            <TextView
+                style="@style/Text_Body3_Bold_Sec_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="Sweep Icon" />
+
+            <TextView
+                style="@style/Text_Caption_Regular_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColorLink="@color/white_op87"
+                android:text="@string/credit_sweep_icon"
+                android:textColor="@color/white_op50" />
+
+            <TextView
+                style="@style/Text_Body3_Bold_Sec_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="Cup Icon" />
+
+            <TextView
+                style="@style/Text_Caption_Regular_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:textColorLink="@color/white_op87"
+                android:text="@string/credit_cup_icon"
+                android:textColor="@color/white_op50" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mabbas007="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_medium"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="@dimen/custom_match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layoutDirection="ltr"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_large"
+        tools:layout_width="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_uploadConfirmation_credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_uploadConfirmation_creditsTitle"
+                style="@style/Text_Body1_Bold_Sec_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:text="@string/credits" />
+
+            <EditText
+                android:id="@+id/et_uploadConfirmation_credits"
+                style="@style/Text_Body1_Bold_Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_uploadConfirmation_creditsTitle"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:background="@drawable/shape_rect_rounded_white"
+                android:gravity="center_vertical"
+                android:hint="@string/add_credits_hint"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingTop="@dimen/margin_medium"
+                android:paddingBottom="@dimen/margin_medium"
+                android:maxLength="@integer/tags_max_length"
+                android:maxLines="1"
+                android:minHeight="@dimen/et_default_height"
+                android:paddingLeft="@dimen/margin_medium"
+                android:paddingRight="@dimen/margin_medium"
+                android:textColor="@color/white_op87"
+                android:textColorHint="@color/white_op12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_uploadConfirmation_comicRoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:gravity="center">
+
+            <FrameLayout
+                android:id="@+id/layout_uploadConfirmation_caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/layout_comic_content"
+                android:layout_alignRight="@+id/layout_comic_content"
+                android:background="@color/backgroundLight"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                tools:visibility="visible">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_uploadConfirmation_caption"
+                    style="@style/Text_Body1_Bold_Light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start|center_vertical"
+                    android:hint="@string/add_caption_hint"
+                    android:imeOptions="actionDone"
+                    android:inputType="text|textCapSentences|textMultiLine|textNoSuggestions"
+                    android:lineSpacingExtra="@dimen/line_spacing_medium"
+                    android:maxLength="@integer/caption_max_length"
+                    android:maxLines="5"
+                    android:minHeight="@dimen/et_caption_minHeight"
+                    android:paddingLeft="@dimen/margin_semi_large"
+                    android:paddingRight="@dimen/margin_semi_large"
+                    android:textAlignment="textStart"
+                    android:textDirection="firstStrong"
+                    app:met_baseColor="@color/white"
+                    app:met_floatingLabel="none"
+                    app:met_hideUnderline="true"
+                    app:met_textColor="@color/white"
+                    app:met_textColorHint="@color/white_op25" />
+            </FrameLayout>
+
+
+            <include
+                android:id="@+id/layout_comicUploadConfirmation_comicBody"
+                layout="@layout/content_comic_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_uploadConfirmation_caption" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

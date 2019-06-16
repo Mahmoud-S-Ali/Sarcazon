@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_comic_bottomLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/backgroundLight"
+    android:gravity="center_vertical"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_small"
+    android:paddingRight="@dimen/margin_small">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageButton
+            android:id="@+id/ib_comic_like"
+            android:layout_width="@dimen/ic_size_small"
+            android:layout_height="@dimen/ic_size_small"
+            android:background="@color/transparent"
+            android:padding="@dimen/margin_x_small"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_like" />
+
+        <TextView
+            android:id="@+id/tv_comic_likesCount"
+            style="@style/Text_Body3_Bold_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_x_small"
+            android:paddingRight="@dimen/margin_x_small"
+            android:text="10K" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_comic_dislike"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_comic_dislike"
+            android:layout_width="@dimen/ic_size_small"
+            android:layout_height="@dimen/ic_size_small"
+            android:background="@color/transparent"
+            android:padding="@dimen/margin_x_small"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_dislike" />
+
+        <TextView
+            android:id="@+id/tv_comic_dislikesCount"
+            style="@style/Text_Body3_Bold_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_x_small"
+            android:paddingRight="@dimen/margin_x_small"
+            tools:text="1K" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_comic_comments"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="@dimen/ic_size_small"
+            android:layout_height="@dimen/ic_size_small"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:padding="@dimen/margin_x_small"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_comments_white_87" />
+
+        <TextView
+            android:id="@+id/tv_comic_commentsCount"
+            style="@style/Text_Body3_Bold_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_x_small"
+            android:gravity="center"
+            android:text="200" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_comic_share"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_comic_share"
+            android:layout_width="@dimen/ic_size_small"
+            android:layout_height="@dimen/ic_size_small"
+            android:background="@color/transparent"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:padding="@dimen/margin_x_small"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_share_white_op70" />
+
+        <TextView
+            style="@style/Text_Body3_Bold_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_x_small"
+            android:gravity="center"
+            android:text="@string/share" />
+
+    </LinearLayout>
+</LinearLayout>

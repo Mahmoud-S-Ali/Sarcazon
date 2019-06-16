@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_profile_root"
+    android:layout_width="@dimen/custom_match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_medium"
+    tools:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_profile_followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_profile_followersCount"
+                style="@style/Text_Header2_Bold_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                tools:text="12" />
+
+            <TextView
+                style="@style/Text_Body1_Regular_Sec2_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_x_small"
+                android:text="@string/followers" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_profile_followings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_toLeftOf="@id/layout_profile_followers"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_profile_followingsCount"
+                style="@style/Text_Header2_Bold_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                tools:text="7" />
+
+            <TextView
+                style="@style/Text_Body1_Regular_Sec2_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_x_small"
+                android:text="@string/following" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_toRightOf="@id/layout_profile_followers"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_profile_totalLikesCount"
+                style="@style/Text_Header2_Bold_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                tools:text="120" />
+
+            <TextView
+                style="@style/Text_Body1_Regular_Sec2_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_x_small"
+                android:text="@string/likes" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_profile_follow"
+        style="@style/BtnRounded"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:visibility="gone"
+        tools:text="@string/follow"
+        tools:textColor="@color/colorAccent"
+        tools:visibility="visible" />
+
+    <include
+        layout="@layout/divider_light"
+        android:layout_width="260dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_profile_quote"
+        style="@style/Text_Body1_Regular_Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/quote_lineSpacing_extra"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        tools:text="I don't always say funny stuff, but when I do 'Knock knock' " />
+</LinearLayout>

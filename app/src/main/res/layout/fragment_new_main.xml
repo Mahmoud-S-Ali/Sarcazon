@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/custom_match_parent"
+    android:layout_height="match_parent"
+    tools:layout_width="match_parent">
+
+    <com.joyapeak.sarcazon.ui.custom.SlowerPlayerViewContainer
+        android:id="@+id/rv_main_comics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_x_small"
+        android:scrollbarStyle="outsideOverlay"/>
+
+    <include layout="@layout/layout_empty_items" />
+
+    <ProgressBar
+        android:id="@+id/pb_comics_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:progressDrawable="@color/colorAccent" />
+
+</FrameLayout>

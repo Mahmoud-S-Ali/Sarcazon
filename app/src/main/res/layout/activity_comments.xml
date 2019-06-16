@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_bottom_panel_comments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="bottom"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoDraggableFromAnywhere="true"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoParentScrollableView="@id/sv_main"
+    sothree:umanoScrollableView="@id/rv_comments"
+    sothree:umanoShadowHeight="0dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/appbar_general" />
+
+        <!-- Bottom Sliding panel -->
+        <include layout="@layout/layout_comments" />
+    </LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

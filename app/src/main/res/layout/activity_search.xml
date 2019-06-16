@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/margin_medium"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:inputType="text"
+        android:maxLines="1"
+        android:background="?attr/colorButtonNormal"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="@dimen/margin_medium"
+        android:hint="@string/search"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout_search"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:background="@color/white"
+        app:elevation="0dp"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed" />
+
+    <androidx.core.view.ViewPager
+        android:id="@+id/viewpager_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

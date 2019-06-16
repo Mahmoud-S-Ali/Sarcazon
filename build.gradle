@@ -1,0 +1,92 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        mavenCentral()
+        google()
+        jcenter()
+
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath 'com.google.gms:google-services:4.2.0'
+
+        classpath 'io.fabric.tools:gradle:1.+'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven {url 'https://dl.bintray.com/zeattacker/maven/' }
+        maven {url 'https://maven.google.com/'}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // Sdk and tools
+    minSdkVersion = 16
+    targetSdkVersion = 28
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.3'
+
+    // App dependencies
+    supportLibraryVersion = '28.0.0'
+    gsonVersion = '2.8.0'
+    calligraphyVersion = '2.3.0'
+    glideVersion = '4.8.0'
+    gifViewerVersion = '1.2.12'
+    /*circularImageVersion = '2.2.0'*/
+    materialEditTextVersion = '2.1.4'
+    photoViewVersion = '2.0.0'
+    overScrollVersion = '1.0.4'
+    facebookPlayerVersion = '0.0.2@aar'
+    firebaseVersion = '16.0.9'
+    firebaseAuthVersion = '17.0.0'
+    firebaseMessagingVersion = '18.0.0'
+    crashlyticsVersion = '2.9.3'
+    multidexVersion = '1.0.3'
+    materialEditTextVersion = '2.1.4'
+    cropImageVersion = '2.7.0'
+    eventbusVersion = '3.1.1'
+    slidingIntroVersion = '3.2.0'
+    toroVersion = '3.6.2.2903'
+    exoPlayerVersion = 'r2.10.1'
+
+    imageCompressorVersion = '2.1.0'
+
+    rxjava2Version = '2.1.14'
+    rxandroidVersion = '2.0.2'
+    dagger2Version = '2.23.1'
+    butterKnifeVersion = '10.1.0'
+    timberVersion = '4.7.0'
+    leakCanaryVersion = '1.5.4'
+
+    stethoVersion = '1.5.0'
+
+    facebookVersion = '4.34.0'
+
+    branchVersion = '2.+'
+
+    retrofitVersion = '2.6.0'
+    okhttpVersion = '3.10.0'
+
+    //Test dependencies
+    junitVersion = '4.12'
+    espressoVersion = '3.0.1'
+    testRunner = '1.0.1'
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.joyapeak.sarcazon.ui.main.MainActivity">
+
+    <include
+        layout="@layout/appbar_general" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout_pending_reports"
+            android:layout_width="match_parent"
+            android:background="@color/background"
+            android:layout_height="?attr/actionBarSize"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorAccent2"
+            app:tabIndicatorHeight="1dp" />
+
+        <com.joyapeak.sarcazon.ui.custom.SwipingViewPager
+            android:id="@+id/viewpager_pending_reports"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

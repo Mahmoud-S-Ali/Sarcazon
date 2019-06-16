@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="@dimen/margin_small">
+
+    <EditText
+        android:id="@+id/et_tag"
+        style="@style/Text_Body1_Bold_Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:background="@drawable/shape_rect_rounded_white"
+        android:gravity="center_vertical"
+        tools:hint="Tag 1"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_small"
+        android:maxLength="@integer/tags_max_length"
+        android:maxLines="1"
+        android:minHeight="@dimen/et_default_height"
+        android:paddingLeft="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium"
+        android:textColor="@color/white_op87"
+        android:textColorHint="@color/white_op12" />
+</FrameLayout>

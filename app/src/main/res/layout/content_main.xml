@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_width="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:fillViewport="true"
+        android:scrollbarStyle="outsideOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="56dp">
+
+            <TextView
+                android:id="@+id/tv_main_removedMsg"
+                style="@style/Text_Body1_Bold_Sec_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin_large"
+                android:layout_marginRight="@dimen/margin_large"
+                android:gravity="center"
+                android:text="@string/comic_removed_msg"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layout_main_comicContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:layout_width="match_parent">
+
+                <include layout="@layout/content_comic_poster_info" />
+
+                <include layout="@layout/content_comic_body" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include layout="@layout/content_comic_actions" />
+
+    <LinearLayout
+        android:id="@+id/layout_main_reviewActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tint_black"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_x_small"
+        android:paddingTop="@dimen/margin_x_small"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_pendingReview_block"
+            style="@style/Text_Body1_Bold_Light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/block"
+            android:textColor="@color/red" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/white_op12" />
+
+        <Button
+            android:id="@+id/btn_pendingReview_allow"
+            style="@style/Text_Body1_Bold_Light"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:text="@string/allow" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_comic_likeImage"
+        android:layout_width="@dimen/likeImage_size"
+        android:layout_height="@dimen/likeImage_size"
+        android:layout_centerInParent="true"
+        android:background="@drawable/shape_circular_gradient"
+        android:visibility="invisible"
+        android:layout_margin="@dimen/margin_medium">
+
+        <ImageView
+            android:id="@+id/iv_comic_likeImage"
+            android:layout_width="@dimen/likeImage_size"
+            android:layout_height="@dimen/likeImage_size"
+            app:srcCompat="@drawable/ic_like_active" />
+    </FrameLayout>
+
+</RelativeLayout>

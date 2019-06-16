@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/custom_match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.joyapeak.sarcazon.ui.profilesettings.ProfileSettingsActivity"
+    tools:layout_width="match_parent"
+    tools:showIn="@layout/activity_profile_settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_medium">
+
+        <ImageView
+            android:id="@+id/iv_profileSettings_photo"
+            android:layout_width="@dimen/civ_size_large"
+            android:layout_height="@dimen/civ_size_large"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/et_profileSettings_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:hint="@string/name"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapWords"
+            android:maxLength="@integer/name_max_length" />
+
+        <EditText
+            android:id="@+id/et_profileSettings_quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:hint="@string/quote"
+            android:imeOptions="actionNext"
+            android:inputType="text|textCapSentences"
+            android:maxLength="@integer/quote_max_length"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/et_profileSettings_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLength="@integer/email_max_length"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/et_profileSettings_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:maxLength="@integer/password_max_length"
+            android:maxLines="1" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

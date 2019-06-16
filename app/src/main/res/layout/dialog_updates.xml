@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/custom_match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:layout_width="match_parent">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card-view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        card-view:cardBackgroundColor="@color/backgroundLight"
+        card-view:cardCornerRadius="@dimen/radius_large"
+        card-view:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:gravity="center_horizontal"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/dialog_padding_vertical"
+            android:paddingTop="@dimen/dialog_padding_vertical">
+
+            <TextView
+                android:id="@+id/tv_updatesDialog_title"
+                style="@style/Text_Header2_Bold_Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dialog_padding_horizontal"
+                android:layout_marginRight="@dimen/dialog_padding_horizontal"
+                android:gravity="center"
+                android:text="@string/updates_title"
+                android:textColor="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="320dp">
+
+                    <com.joyapeak.sarcazon.ui.custom.CustomViewPager
+                        android:id="@+id/viewpager_updates"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dialog_padding_vertical"
+                        app:elevation="0dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/tint_background"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white_op12"/>
+
+            <Button
+                android:id="@+id/btn_updatesDialog_next"
+                style="@style/BtnRounded"
+                android:layout_width="@dimen/btn_rounded_width_large"
+                android:layout_height="@dimen/btn_rounded_height_large"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:background="@drawable/shape_rect_rounded_accent2"
+                android:text="@string/tamam"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

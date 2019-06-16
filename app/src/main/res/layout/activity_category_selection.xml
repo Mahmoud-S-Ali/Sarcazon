@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_top_panel_categories"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="top"
+    sothree:umanoDraggableFromAnywhere="true"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoParallaxOffset="100dp"
+    sothree:umanoParentScrollableView="@id/sv_main"
+    sothree:umanoScrollableView="@id/rv_comments"
+    sothree:umanoShadowHeight="0dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical"
+        tools:context="com.joyapeak.sarcazon.ui.category.CategorySelectionActivity">
+
+        <include layout="@layout/appbar_done" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_categories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingTop="@dimen/margin_medium"
+            android:scrollbarStyle="outsideOverlay" />
+
+    </LinearLayout>
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+

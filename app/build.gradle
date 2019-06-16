@@ -1,0 +1,148 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+android {
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileOptions.incremental = true
+    defaultConfig {
+        applicationId "com.joyapeak.sarcazon"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        vectorDrawables.useSupportLibrary = true
+        versionCode 33
+        versionName "1.3.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        debug {
+            buildConfigField("String", "BASE_URL", "")
+            buildConfigField("String", "API_KEY", "")
+            buildConfigField("String", "GOOGLE_API_KEY", "")
+            buildConfigField("String", "FACEBOOK_APP_TOKEN", "")
+            buildConfigField("String", "FACEBOOK_APP_ID", "")
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // android support libraries
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.0.0'
+    implementation 'androidx.browser:browser:1.0.0'
+    implementation 'androidx.multidex:multidex:2.0.0'
+
+    // Material Edittext
+    implementation "com.rengwuxian.materialedittext:library:$rootProject.materialEditTextVersion"
+
+    // Crop Image
+    implementation "com.theartofdev.edmodo:android-image-cropper:$rootProject.cropImageVersion"
+
+    // Eventbus
+    implementation "org.greenrobot:eventbus:$rootProject.eventbusVersion"
+
+    // Firebase
+    implementation "com.google.firebase:firebase-core:$rootProject.firebaseVersion"
+    implementation "com.google.firebase:firebase-auth:$rootProject.firebaseAuthVersion"
+    implementation "com.google.firebase:firebase-messaging:$rootProject.firebaseMessagingVersion"
+    implementation "com.crashlytics.sdk.android:crashlytics:$rootProject.crashlyticsVersion"
+
+    // Image compressor
+    implementation "id.zelory:compressor:$rootProject.imageCompressorVersion"
+
+    // Calligraphy for font style
+    implementation "uk.co.chrisjenx:calligraphy:$rootProject.calligraphyVersion"
+
+    // Timber for logging
+    implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
+
+    // Glide for showing images
+    implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+    implementation("com.github.bumptech.glide:okhttp3-integration:$rootProject.glideVersion") {
+        exclude group: 'glide-parent'
+    }
+    annotationProcessor "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
+
+    // Gif viewer
+    implementation "pl.droidsonroids.gif:android-gif-drawable:$rootProject.gifViewerVersion"
+
+    // Sliding panel
+    implementation project(':androidslidinguppanel')
+
+    // Tags Edit Text
+    implementation project(':TagsEditText')
+
+    // Recyclerview Videos
+    implementation "im.ene.toro3:toro:$rootProject.toroVersion"
+    implementation "im.ene.toro3:toro-ext-exoplayer:$rootProject.toroVersion"
+
+    // to get ExoPlayer support
+    // Playerview
+    implementation "com.google.android.exoplayer:exoplayer:$rootProject.exoPlayerVersion"
+
+    // PhotoView for zooming
+    implementation "com.github.chrisbanes:PhotoView:$rootProject.photoViewVersion"
+
+    // Tutorial page
+    implementation "com.matthew-tamlin:sliding-intro-screen:$rootProject.slidingIntroVersion"
+
+    // RxJava
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjava2Version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
+
+    // Dagger for dependency injection
+    implementation "com.google.dagger:dagger:$rootProject.dagger2Version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.dagger2Version"
+
+    // Retrofit for making api calls
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.okhttpVersion"
+
+    //Butterknife for views code generation
+    implementation "com.jakewharton:butterknife:$rootProject.butterKnifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
+
+    // Circular Images
+    /*implementation "de.hdodenhof:circleimageview:$rootProject.circularImageVersion"*/
+
+    // Overscroll for scrollview or recyclerview
+    implementation "me.everything:overscroll-decor-android:$rootProject.overScrollVersion"
+
+    // Leak Canary for detecting any memory leaks
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$rootProject.leakCanaryVersion"
+    releaseImplementation "com.squareup.leakcanary:leakcanary-android-no-op:$rootProject.leakCanaryVersion"
+
+    // Stetho for ready local memory and network interception with okhttp
+    implementation "com.facebook.stetho:stetho:$rootProject.stethoVersion"
+    implementation "com.facebook.stetho:stetho-okhttp3:$rootProject.stethoVersion"
+
+    // Facebook SDK
+    implementation "com.facebook.android:facebook-android-sdk:$rootProject.facebookVersion"
+    implementation "com.facebook.android:facebook-core:$rootProject.facebookVersion"
+    implementation "com.facebook.android:facebook-marketing:$rootProject.facebookVersion"
+
+    // Branch io
+    implementation "io.branch.sdk.android:library:$rootProject.branchVersion"
+
+    // for test
+    testImplementation "junit:junit:$rootProject.junitVersion"
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+}
+
+apply plugin: 'com.google.gms.google-services'

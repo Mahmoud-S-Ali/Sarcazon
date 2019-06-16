@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/featured_end_header"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/margin_x_small"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_medium"
+        style="@style/Text_Header1_Bold_Light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/swipe"
+            style="@style/Text_Header2_Regular_Sec_Light"/>
+
+        <ImageView
+            android:layout_width="@dimen/ic_size_medium"
+            android:layout_height="@dimen/ic_size_medium"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_marginRight="@dimen/margin_medium"
+            app:srcCompat="@drawable/ic_swipe_hor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/le"
+            style="@style/Text_Header2_Regular_Sec_Light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/top_posts"
+            android:layout_marginLeft="@dimen/margin_small"
+            style="@style/Text_Header2_Bold_Light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:text="@string/aktar"
+            style="@style/Text_Header2_Regular_Sec_Light"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or_goto"
+            style="@style/Text_Header2_Regular_Sec_Light"/>
+
+        <Button
+            android:id="@+id/btn_featuredEnd_all"
+            style="@style/Text_Header2_Bold_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="200dp"
+            android:textAllCaps="false"
+            android:background="@drawable/shape_rect_rounded_blue"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/all"
+            android:padding="@dimen/margin_medium"/>
+
+    </LinearLayout>
+
+</LinearLayout>

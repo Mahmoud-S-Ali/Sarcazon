@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.joyapeak.sarcazon.ui.login.LoginActivity">
+
+    <include layout="@layout/appbar_done" />
+
+    <LinearLayout
+        android:id="@+id/layout_login_error"
+        android:layout_width="@dimen/custom_match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        tools:layout_width="match_parent"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/ic_size_x_small"
+            android:layout_height="@dimen/ic_size_x_small"
+            app:srcCompat="@drawable/ic_error_red500" />
+
+        <TextView
+            android:id="@+id/tv_signIn_errorMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingStart="@dimen/margin_small"
+            android:text="@string/error_email_or_password" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_login_email"
+        android:layout_width="@dimen/custom_match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:maxLength="@integer/email_max_length"
+        android:maxLines="1"
+        tools:layout_width="match_parent" />
+
+    <EditText
+        android:id="@+id/et_login_password"
+        android:layout_width="@dimen/custom_match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_small"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:maxLength="@integer/password_max_length"
+        android:maxLines="1"
+        tools:layout_width="match_parent" />
+
+</LinearLayout>

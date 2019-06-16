@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_shareItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_medium">
+
+    <ImageView
+        android:id="@+id/iv_shareItem_icon"
+        android:layout_width="@dimen/ic_size_default"
+        android:layout_height="@dimen/ic_size_default"
+        tools:src="@drawable/ic_youtube" />
+
+    <TextView
+        android:id="@+id/tv_shareItem_itemName"
+        style="@style/Text_Body3_Regular_Light"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_small"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="Facebook"
+        android:visibility="visible"/>
+</LinearLayout>
+

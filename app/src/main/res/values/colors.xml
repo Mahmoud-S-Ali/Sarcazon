@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#232323</color>
+    <color name="colorPrimaryDark">#171717</color>
+    <color name="background">@color/black</color>
+    <color name="colorPrimaryLight">#464646</color>-->
+
+    <!--<color name="colorPrimary">#050917</color>
+    <color name="colorPrimaryDark">#01030B</color>
+    <color name="background">#0D1224</color>
+    <color name="colorPrimaryLight">#181E33</color>-->
+
+    <!--<color name="colorPrimary">#62B859</color>-->
+
+    <!--<color name="colorPrimary">#0e5068</color>
+    <color name="colorPrimaryDark">#0a3b4a</color>
+    <color name="background">#15252E</color>
+    <color name="colorPrimaryLight">#212C32</color>-->
+
+    <!--<color name="colorPrimary">#8D0E43</color>-->
+
+    <!--<color name="colorPrimary">#940E37</color>
+    <color name="colorPrimaryDark">#750023</color>
+    <color name="background">#212121</color>
+    <color name="colorPrimaryLight">#272727</color>-->
+
+    <!--/////////////////////////////////////////////-->
+
+    <!--<color name="colorPrimary">#131313</color>
+    <color name="colorPrimaryDark">#131313</color>
+    <color name="background">#131313</color>
+    <color name="backgroundLight">#202020</color>
+    <color name="backgroundLighter">#282828</color>&ndash;&gt;-->
+
+    <!--<color name="colorPrimary">#050916</color>
+    <color name="colorPrimaryDark">#050916</color>
+    <color name="background">#050916</color>
+    <color name="backgroundLight">#0D1328</color>
+    <color name="backgroundLighter">#141B34</color>-->
+
+    <color name="colorPrimary">#1B1B1B</color>
+    <color name="colorPrimaryDark">#1B1B1B</color>
+    <color name="background">@color/black</color>
+    <color name="backgroundDark">@color/black</color>
+    <color name="backgroundLight">#1B1B1B</color>
+    <color name="backgroundLighter">#2C2C2C</color>
+
+    <!--<color name="colorPrimary">#0175C7</color>
+    <color name="colorPrimaryDark">#015794</color>
+    &lt;!&ndash;<color name="colorPrimary">#54952A</color>
+    <color name="colorPrimaryDark">#37750F</color>&ndash;&gt;
+    <color name="background">#050916</color>
+    <color name="backgroundLight">#0D1328</color>
+    <color name="backgrouneldLighter">#141B34</color>-->
+
+    <!--<color name="colorPrimary">#54952A</color>
+    <color name="colorPrimaryDark">#37750F</color>
+    <color name="background">#1A1A1A</color>
+    <color name="backgroundLight">#212121</color>
+    <color name="backgroundSemiLight">#1A1A1A</color>-->
+
+    <!--/////////////////////////////////////////////-->
+
+    <!--<color name="colorPrimary">#0B0C1D</color>
+    <color name="colorPrimaryDark">#050512</color>
+    <color name="background">#141526</color>
+    <color name="colorPrimaryLight">#181E33</color>-->
+
+    <!--<color name="colorPrimary">#180407</color>
+    <color name="colorPrimaryDark">#0B0002</color>
+    <color name="background">#1D0A0D</color>-->
+
+    <!--<color name="colorPrimary">#0B030D</color>
+    <color name="colorPrimaryDark">#050006</color>
+    <color name="background">#120714</color>-->
+
+    <!--<color name="colorPrimary">#0D020C</color>
+    <color name="colorPrimaryDark">#060006</color>
+    <color name="background">#150714</color>-->
+
+    <!--<color name="colorPrimary">#140312</color>
+    <color name="colorPrimaryDark">#090009</color>
+    <color name="background">#1F0A1D</color>-->
+
+    <!--<color name="colorPrimary">#091020</color>
+    <color name="colorPrimaryDark">#020712</color>
+    <color name="background">#131C2F</color>
+    <color name="colorPrimaryLight">#20283B</color>-->
+
+    <!--<color name="colorPrimary">#1A0419</color>
+    <color name="colorPrimaryDark">#0D000C</color>
+    <color name="background">#290C27</color>-->
+    <!--<color name="colorPrimaryLight">#381835</color>-->
+
+    <!--<color name="colorPrimary">#210511</color>
+    <color name="colorPrimaryDark">#100007</color>
+    <color name="background">#330F1F</color>
+    <color name="colorPrimaryLight">#461D2F</color>-->
+
+
+    <!--<color name="colorPrimaryLight">#2B1329</color>-->
+
+    <!--<color name="colorAccent">#6AFF00</color>-->
+    <!--#FFC10E-->
+    <color name="colorAccent">#F1D300</color>
+    <color name="colorAccent2">@color/blue_light</color>
+    <color name="colorAccent3">#64dd14</color>
+    <!--<color name="colorAccent">#00E6DD</color>-->
+    <!--<color name="colorAccent">#30FF1A</color>-->
+
+    <color name="white">#ffffff</color>
+    <color name="white_op87">#DDffffff</color>
+    <color name="white_op80">#CCffffff</color>
+    <color name="white_op12">#42FFFFFF</color>
+    <color name="white_op70">#B3FFFFFF</color>
+    <color name="white_op50">#80FFFFFF</color>
+    <color name="white_op25">#40FFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="black_op12">#42000000</color>
+    <color name="black_op25">#40000000</color>
+    <color name="black_op87">#DD000000</color>
+    <color name="black_op57">#91000000</color>
+    <color name="black_op38">#60000000</color>
+    <color name="black_op70">#B2000000</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="grey_x_dark">#1F1F1F</color>
+    <color name="grey_dark">#212121</color>
+    <color name="grey_light">#E0E0E0</color>
+    <color name="grey_x_light">#EEEEEE</color>
+
+    <color name="blue_light">#29B6F6</color>
+    <color name="blue">#0288D1</color>
+
+    <color name="green">#00C853</color>
+    <color name="green_light">#64DD17</color>
+
+
+
+    <color name="red">#F44336</color>
+
+</resources>

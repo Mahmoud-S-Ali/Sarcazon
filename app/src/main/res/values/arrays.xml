@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="comic_sources">
+        <item>@string/comics_source_featured</item>
+        <item>@string/comics_source_all</item>
+        <item>@string/comics_source_subscriptions</item>
+    </string-array>
+
+    <string-array name="comic_options_general">
+        <item>@string/report</item>
+    </string-array>
+
+    <string-array name="comic_options_owner">
+        <item>@string/delete</item>
+    </string-array>
+
+    <string-array name="comment_options_general">
+        <item>@string/report</item>
+    </string-array>
+
+    <string-array name="comment_options_owner">
+        <item>@string/delete</item>
+        <!--<item>@string/report</item>-->
+    </string-array>
+
+    <string-array name="profile_options_owner">
+        <item>@string/share</item>
+        <item>@string/edit</item>
+        <item>@string/logout</item>
+    </string-array>
+
+    <string-array name="profile_options_general">
+        <item>@string/share</item>
+        <!--<item>@string/report</item>-->
+    </string-array>
+
+    <string-array name="options_admin">
+        <item>@string/block</item>
+        <item>@string/hide</item>
+        <item>@string/delete</item>
+    </string-array>
+
+
+    <!-- PHOTO SOURCE -->
+    <string-array name="comic_share_type">
+        <item>@string/comicShareType_save</item>
+        <item>@string/comicShareType_share</item>
+    </string-array>
+
+    <!-- PHOTO SOURCE -->
+    <string-array name="photo_sources">
+        <item>@string/photoSource_gallery</item>
+        <item>@string/photoSource_camera</item>
+        <item>@string/photoSource_remove</item>
+    </string-array>
+
+    <!-- PHOTO SOURCE WITHOUT REMOVE -->
+    <string-array name="photo_sources_without_remove">
+        <item>@string/photoSource_gallery</item>
+        <item>@string/photoSource_camera</item>
+    </string-array>
+
+    <!-- PHOTO SOURCE WITHOUT REMOVE -->
+    <string-array name="gif_sources">
+        <item>@string/photoSource_gallery</item>
+        <item>@string/photoSource_url</item>
+    </string-array>
+
+    <!-- REPORT TYPES -->
+    <string-array name="report_types">
+        <item>@string/reportType_nudity</item>
+        <item>@string/reportType_hate</item>
+        <item>@string/reportType_language</item>
+        <item>@string/reportType_violence</item>
+        <item>@string/reportType_spam</item>
+    </string-array>
+
+    <string-array name="nav_view_items">
+        <item>@string/leaderboard</item>
+        <item>@string/my_profile</item>
+        <item>@string/credits</item>
+        <item>@string/follow_us_facebook</item>
+        <item>@string/message_us</item>
+        <item>@string/rate_the_app</item>
+    </string-array>
+
+    <integer-array name="nav_view_items_icons">
+        <item>@drawable/ic_trophy_active</item>
+        <item>@drawable/ic_profile</item>
+        <item>@drawable/ic_credits</item>
+        <item>@drawable/ic_facebook</item>
+        <item>@drawable/ic_message</item>
+        <item>@drawable/ic_star2_inactive</item>
+    </integer-array>
+
+    <string-array name="nav_view_items_admin">
+        <item>@string/featured</item>
+        <item>@string/all</item>
+        <item>@string/leaderboard</item>
+        <item>@string/my_profile</item>
+        <item>@string/credits</item>
+        <item>@string/tutorial</item>
+        <item>@string/pending_featured</item>
+        <item>@string/reported_comics</item>
+        <item>@string/reported_comments</item>
+    </string-array>
+
+    <string-array name="user_review_actions">
+        <item>@string/nothing</item>
+        <item>@string/warn</item>
+        <item>@string/block_week</item>
+        <item>@string/block_month</item>
+        <item>@string/block</item>
+    </string-array>
+
+    <string-array name="pending_featured_options">
+        <item>@string/release</item>
+        <item>@string/set_next_time</item>
+    </string-array>
+    <string name="tutorial">Tutorial</string>
+    <string name="photoSource_url">Url</string>
+    <string name="follow_us_facebook">Follow us on Facebook</string>
+    <string name="rate_the_app">Rate the app</string>
+    <string name="message_us">Message us</string>
+</resources>

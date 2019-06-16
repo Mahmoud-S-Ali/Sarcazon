@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card-view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_comicItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    card-view:cardBackgroundColor="@color/background"
+    card-view:cardCornerRadius="@dimen/radius_large"
+    card-view:cardPreventCornerOverlap="false">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.joyapeak.sarcazon.ui.custom.CustomHeightImageView
+            android:id="@+id/iv_comicItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true" />
+
+        <ImageView
+            android:id="@+id/iv_comicItem_playIcon"
+            android:layout_width="@dimen/ic_size_large"
+            android:layout_height="@dimen/ic_size_large"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_video_play" />
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

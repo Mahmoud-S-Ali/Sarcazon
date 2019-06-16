@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.joyapeak.sarcazon.ui.pendingcommentsforreview.PendingCommentsForReviewActivity">
+
+    <include layout="@layout/appbar_general" />
+
+    <include layout="@layout/layout_empty_items" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_reported_comments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_semi_medium"
+        android:scrollbarStyle="outsideOverlay" />
+
+</LinearLayout>

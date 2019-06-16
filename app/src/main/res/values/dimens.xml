@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splash_icon_size">74dp</dimen>
+    <dimen name="main_posterInfo_height">40dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="activity_padding_horizontal">@dimen/margin_medium</dimen>
+    <dimen name="activity_padding_vertical">@dimen/margin_medium</dimen>
+    <dimen name="main_bottomLayout_height">40dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="dialog_padding_horizontal">24dp</dimen>
+    <dimen name="dialog_padding_vertical">24dp</dimen>
+    <dimen name="margin_x_small">4dp</dimen>
+    <dimen name="app_bar_height">220dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="civ_size_large">80dp</dimen>
+    <dimen name="civ_size_medium">56dp</dimen>
+    <dimen name="profile_content_margin_top">56dp</dimen>
+    <dimen name="comicItem_view_height">160dp</dimen>
+
+    <dimen name="civ_size_small">36dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="activity_margin">@dimen/margin_medium</dimen>
+    <dimen name="cv_btn_size_large">64dp</dimen>
+    <dimen name="radius_medium">8dp</dimen>
+    <dimen name="radius_large">16dp</dimen>
+    <dimen name="elevation_small">4dp</dimen>
+    <dimen name="elevation_x_small">2dp</dimen>
+    <dimen name="radius_x_large">24dp</dimen>
+    <dimen name="et_caption_minHeight">48dp</dimen>
+    <dimen name="et_default_height">48dp</dimen>
+    <dimen name="radius_small">4dp</dimen>
+    <dimen name="activity_vertical_margin">@dimen/margin_medium</dimen>
+
+    <!-- Icon sizes -->
+    <dimen name="ic_size_xxx_small">20dp</dimen>
+    <dimen name="ic_size_xx_small">22dp</dimen>
+    <dimen name="ic_size_x_small">24dp</dimen>
+    <dimen name="ic_size_small">32dp</dimen>
+    <dimen name="ic_size_medium">36dp</dimen>
+    <dimen name="ic_size_default">48dp</dimen>
+    <dimen name="ic_size_large">56dp</dimen>
+    <dimen name="ic_size_x_large">72dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="text_size_body1">16sp</dimen>
+    <dimen name="text_size_body2">15sp</dimen>
+    <dimen name="text_size_body3">14sp</dimen>
+
+    <dimen name="text_size_caption">12sp</dimen>
+
+    <dimen name="text_size_header1">22dp</dimen>
+    <dimen name="text_size_header2">20dp</dimen>
+    <dimen name="text_size_header3">18dp</dimen>
+    <dimen name="margin_semi_medium">12dp</dimen>
+    <dimen name="margin_semi_large">20dp</dimen>
+    <dimen name="et_large_height">56dp</dimen>
+    <dimen name="margin_xx_small">2dp</dimen>
+    <dimen name="civ_size_x_large">96dp</dimen>
+    <dimen name="civ_size_xx_large">112dp</dimen>
+    <dimen name="civ_borderWidth_default">1dp</dimen>
+    <dimen name="btn_height_medium">36dp</dimen>
+    <dimen name="notif_icon_size">8dp</dimen>
+    <dimen name="btn_sub_width">100dp</dimen>
+
+    <dimen name="btn_rounded_width">42dp</dimen>
+    <dimen name="btn_rounded_height">110dp</dimen>
+    <dimen name="quote_lineSpacing_extra">4dp</dimen>
+    <dimen name="toolbar_title_margin_horiz">56dp</dimen>
+    <dimen name="btn_width_large">180dp</dimen>
+
+    <!-- General dimensions -->
+    <dimen name="custom_wrap_content">-2px</dimen>
+    <dimen name="custom_match_parent">-1px</dimen>
+
+    <dimen name="likeImage_size">156dp</dimen>
+    <dimen name="btn_rounded_width_large">160dp</dimen>
+    <dimen name="btn_rounded_height_large">48dp</dimen>
+    <dimen name="toolbar_small_height">46dp</dimen>
+    <dimen name="line_spacing_medium">2dp</dimen>
+    <dimen name="line_spacing_large">3dp</dimen>
+</resources>

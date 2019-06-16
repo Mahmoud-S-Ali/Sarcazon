@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="@dimen/custom_match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:layout_marginTop="@dimen/margin_x_small"
+        android:orientation="vertical"
+        tools:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_semi_medium"
+            android:layout_marginRight="@dimen/margin_semi_medium"
+            android:layoutDirection="ltr"
+            android:background="@drawable/shape_rect_rounded_parimary_light"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_small"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingRight="@dimen/margin_small">
+
+            <ImageButton
+                android:background="@color/transparent"
+                android:id="@+id/ib_commentItem_commentOptions"
+                android:layout_width="@dimen/ic_size_x_small"
+                android:layout_height="@dimen/ic_size_x_small"
+                android:layout_marginTop="@dimen/margin_x_small"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:layout_marginRight="@dimen/margin_small"
+                android:rotation="90"
+                app:srcCompat="@drawable/ic_options_white50" />
+
+            <ImageView
+                android:id="@+id/iv_commentItem_commenterPhoto"
+                android:layout_width="@dimen/civ_size_small"
+                android:layout_height="@dimen/civ_size_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/tv_commentItem_commenterName"
+                style="@style/Text_Body3_Bold_Sec2_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_commentItem_commenterPhoto"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_toRightOf="@id/iv_commentItem_commenterPhoto"
+                android:textColor="@color/white_op50"
+                android:textSize="@dimen/text_size_caption"
+                tools:text="Abdelsalam" />
+
+            <TextView
+                android:id="@+id/tv_commentItem_body"
+                style="@style/Text_Body2_Regular_Light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_commentItem_commenterName"
+                android:gravity="start|center_vertical"
+                android:textDirection="firstStrong"
+                android:textAlignment="textStart"
+                android:lineSpacingExtra="@dimen/line_spacing_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_below="@id/tv_commentItem_commenterName"
+                android:layout_marginTop="@dimen/margin_x_small"
+                android:textSize="16sp"
+                tools:text="This is the best app ever... wow" />
+
+            <TextView
+                android:id="@+id/tv_commentItem_time"
+                style="@style/Text_Caption_Regular_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_commentItem_commenterName"
+                android:layout_alignTop="@id/tv_commentItem_commenterName"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:layout_marginRight="@dimen/margin_medium"
+                android:layout_toRightOf="@id/tv_commentItem_commenterName"
+                android:gravity="center"
+                android:textColor="@color/white_op25"
+                tools:text="yesterday" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="64dp"
+            android:layoutDirection="ltr"
+            android:layout_marginRight="@dimen/margin_large"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_x_small"
+            android:paddingTop="@dimen/margin_x_small">
+
+            <ImageButton
+                android:id="@+id/ib_commentItem_likeIcon"
+                android:layout_width="@dimen/ic_size_x_small"
+                android:layout_height="@dimen/ic_size_x_small"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="3dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_like_white_50" />
+
+            <TextView
+                android:id="@+id/tv_commentItem_likesCount"
+                style="@style/Text_Body3_Regular_Sec2_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:textColor="@color/white_op50"
+                tools:text="12" />
+
+            <ImageButton
+                android:id="@+id/ib_commentItem_dislikeIcon"
+                android:layout_width="@dimen/ic_size_x_small"
+                android:layout_height="@dimen/ic_size_x_small"
+                android:layout_marginLeft="@dimen/margin_medium"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="3dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_dislike_white_50" />
+
+            <TextView
+                android:id="@+id/tv_commentItem_dislikesCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_x_small"
+                android:visibility="gone"
+                tools:text="3" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_commentItem_reply"
+                style="@style/Text_Body3_Bold_Sec2_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_x_small"
+                android:paddingRight="@dimen/margin_x_small"
+                android:text="@string/reply"
+                android:textColor="@color/white_op50"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_commentItem_repliesCount"
+                style="@style/Text_Body3_Regular_Sec2_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/margin_small"
+                android:textColor="@color/white_op50"
+                android:visibility="gone"
+                tools:text="5"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/ib_commentItem_repliesIcon"
+                android:layout_width="@dimen/ic_size_x_small"
+                android:layout_height="@dimen/ic_size_x_small"
+                android:background="@color/transparent"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="@dimen/margin_xx_small"
+                android:scaleType="fitCenter"
+                android:visibility="gone"
+                app:srcCompat="@drawable/ic_comments_white_50"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

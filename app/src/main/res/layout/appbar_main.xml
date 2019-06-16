@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appbar_main"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    app:elevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/ib_toolbar_main_pending_featured_options"
+            android:background="@color/background"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+        <ImageButton
+            android:id="@+id/ib_toolbar_main_plus"
+            android:layout_width="@dimen/ic_size_default"
+            android:layout_height="@dimen/ic_size_default"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:background="@color/transparent"
+            app:srcCompat="@drawable/ic_plus_accent" />
+
+        <ImageButton
+            android:id="@+id/ib_toolbar_main_pending_featured_options"
+            android:layout_width="@dimen/ic_size_default"
+            android:layout_height="@dimen/ic_size_default"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/margin_small"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:background="@color/transparent"
+            app:srcCompat="@drawable/ic_options_white70" />
+
+        <TextView
+            android:id="@+id/tv_toolbar_main_title"
+            style="@style/Text_Header3_Bold_Sec_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/toolbar_title_margin_horiz"
+            tools:text="Featured" />
+
+        <ImageView
+            android:id="@+id/iv_toolbar_main_notifIndicator"
+            android:layout_width="@dimen/notif_icon_size"
+            android:layout_height="@dimen/notif_icon_size"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_circle_red" />
+
+    </RelativeLayout>
+
+</com.google.android.material.appbar.AppBarLayout>

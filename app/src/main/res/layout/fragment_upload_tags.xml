@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/Text_Header1_Bold_Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center"
+        android:text="@string/add_tags_hint_title" />
+
+    <TextView
+        style="@style/Text_Body1_Regular_Sec_Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/line_spacing_large"
+        android:text="@string/tags_description" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tags"
+        android:layout_width="@dimen/custom_match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/margin_medium"
+        android:scrollbarStyle="outsideOverlay"
+        tools:layout_width="match_parent" />
+
+</LinearLayout>

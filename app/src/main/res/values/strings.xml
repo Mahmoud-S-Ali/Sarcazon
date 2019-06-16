@@ -1,0 +1,221 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Sarcazon</string>
+
+    <string name="default_notification_channel_id" translatable="false">115</string>
+
+    <string name="facebook_app_id" translatable="false">1532344200405868</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb1532344200405868</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="some_error">Fe moshkela 7asalet!</string>
+
+    <string name="comics_source_featured" translatable="false">Featured</string>
+    <string name="comics_source_all" translatable="false">All</string>
+    <string name="comics_source_subscriptions" translatable="false">Subscriptions</string>
+
+    <string name="share_with">Share 3ala&#8230;</string>
+    <string name="posts">Posts</string>
+    <string name="comments">Comments</string>
+    <string name="replies">Replies</string>
+
+    <string name="empty_str">&#8230;</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="profile_tab_comics">Postatak</string>
+    <string name="profile_tab_notifications">Notifications</string>
+    <string name="profile_tab_comments">comments</string>
+    <string name="subscribers">Subscribers</string>
+    <string name="subscriptions">Subscriptions</string>
+    <string name="unsubscribe">Unsubscribe</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_profile_settings">Profile settings</string>
+    <string name="name">Esmak</string>
+    <string name="quote">Gomla tezhar fe profilak</string>
+    <string name="email">Emailak</string>
+    <string name="password">Password</string>
+    <string name="all">Kol El Gedeed</string>
+    <string name="featured">Top Posts</string>
+    <string name="pending_featured">Pending Top</string>
+    <string name="profile">Profile</string>
+    <string name="my_profile">Profile</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="done">Done</string>
+    <string name="image">Image</string>
+    <string name="gif">Gif</string>
+    <string name="facebook_video">Facebook video</string>
+    <string name="instagram_video">Instagram video</string>
+    <string name="youtube_video">Youtube video</string>
+    <string name="upload">Upload</string>
+
+    <string name="photoSource_gallery">Gallery</string>
+    <string name="photoSource_camera">Camera</string>
+    <string name="photoSource_remove">Remove</string>
+    <string name="register_prompt_msg">Login aw register 3ashan te2dar tedeef comics we tekteb comments</string>
+    <string name="login">Login</string>
+    <string name="facebook_login">Facebook login</string>
+    <string name="register">Register</string>
+
+
+    <string name="server_error_connection">El internet fasel</string>
+    <string name="server_error_internal">Fe moshkela fel server, shof law fe update aw garab tany ba3d shwaya</string>
+    <string name="server_error_general">Fe moshkela 7asalet</string>
+    <string name="search">Search</string>
+    <string name="search_tab_comics">comics</string>
+    <string name="search_tab_users">users</string>
+
+    <string name="reported">Reported</string>
+    <string name="report">Report</string>
+    <string name="block">Block</string>
+
+    <string name="reportType_nudity">Nudity</string>
+    <string name="reportType_hate">Hate</string>
+    <string name="reportType_language">Language</string>
+    <string name="reportType_violence">Violence</string>
+    <string name="reportType_spam">Spam</string>
+
+    <string name="and">and</string>
+    <string name="count_others"><xliff:g id="count">%1$s</xliff:g> others</string>
+
+    <string name="notif_action_comic_featured">El post beta3ak ba2a fel Top Posts 👏</string>
+    <string name="notif_action_comic_like">liked your post</string>
+    <string name="notif_action_comment">commented</string>
+    <string name="notif_action_comment_like">liked your comment</string>
+    <string name="notif_action_reply">replied</string>
+    <string name="notif_action_reply_like">liked your reply</string>
+    <string name="notif_action_sub">is following you</string>
+
+    <string name="notif_comic_featured">El post beta3ak ba2a fel Top Posts 👏</string>
+    <string name="notif_comic_like">Galak likes gededa 3ala el post beta3ak</string>
+    <string name="notif_comment">Galak comments gededa 3ala el post beta3ak</string>
+    <string name="notif_comment_like">Galak likes gededa 3ala commentak</string>
+    <string name="notif_reply">Galak rodood gededa 3ala commentak</string>
+    <string name="notif_reply_like">Galak likes gededa 3ala raddak</string>
+    <string name="notif_sub">Nas gededa 3amaletlak follow</string>
+
+    <string name="comicShareType_save">Save</string>
+    <string name="comicShareType_share">Share</string>
+
+    <string name="video">Video</string>
+    <string name="url_paste_video_hint_title">7ot link el video (men: facebook, youtube, instagram) hena:</string>
+    <string name="url_paste_gif_hint_title">7ot link el gif hena:</string>
+    <string name="cancel">cancel</string>
+    <string name="next">Next</string>
+    <string name="url_paste_hint">https://</string>
+    <string name="add_tags_hint_title">Tags</string>
+    <string name="add_tags_hint"># add tags (ex: lol)</string>
+    <string name="add_caption_hint">Ekteb caption</string>
+    <string name="url_error_empty">Fen el link ya 3am el7ag?</string>
+    <string name="url_error_video_source">Et2aked en link el video men (facebook, youtube, instagram)</string>
+    <string name="url_error_general">Et2aked en el link shaghala</string>
+    <string name="ok">Ok</string>
+    <string name="msg_error_video_url">Link el video feha moshkela, et2aked enaha shghala we en elnet mafhosh moshkela wegarab tany</string>
+    <string name="msg_error_image">El sora mat7amelesh. Momken tegarab tany keda?</string>
+    <string name="tag_error_size_exceeded">Kefaya 5 tags, howa mal sayeeeb</string>
+    <string name="tags_error_empty">Post men gher tag zay koshary men gher da22a</string>
+    <string name="tag_error_special_characters">El tag 7oroof we arkam bas</string>
+    <string name="tag_error_exists">Enta kateb el tag da already</string>
+    <string name="error_email_field_empty">Wadet el email fen ya les?</string>
+    <string name="error_email_invalid">Et2aked enak kateb email saleem</string>
+    <string name="error_password_short">el password lazem teb2a <xliff:g id="count">%1$s</xliff:g> 7oroof 3ala el2a2al wa2ela el hackers haybato 3andak</string>
+    <string name="error_password_invalid">Fe 7oroof mesh hatenfa3, badelha be7roof tanya aw arkam</string>
+    <string name="error_email_or_password">el email aw el password ghalat, efteker kwayes argook</string>
+    <string name="error_name_empty">Tab lama a7eb andahak 2a2olak ya eh?</string>
+    <string name="error_name_invalid">Yetnete2 ezay da, la2 shof esm tany</string>
+    <string name="error_email_exists">Wa7ed saba2ak wekhad el email da</string>
+    <string name="comment_hint">Ekteb commentak hena</string>
+    <string name="comment_error_empty">Hatkhosh 3ala elnas we edak fadya keda?</string>
+    <string name="reply_hint">Ekteb raddak hena</string>
+    <string name="reply_error_empty">Lama enta to7otelo rad fady, yeb2a howa estafad eh?</string>
+    <string name="reply">reply</string>
+
+    <string name="comments_header">Comments (<xliff:g id="count">%1$s</xliff:g>)</string>
+    <string name="replies_header">Replies (<xliff:g id="count">%1$s</xliff:g>)</string>
+    <string name="comic_view_header">Sarcazon</string>
+
+    <string name="upload_header">Upload</string>
+    <string name="followers_header">Followers (<xliff:g id="count">%1$s</xliff:g>)</string>
+    <string name="followings_header">Followings (<xliff:g id="count">%1$s</xliff:g>)</string>
+
+    <string name="add_new">Add New</string>
+    <string name="default_name">Sarcazoner</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="follow">Follow</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="likes">Likes</string>
+    <string name="comic_removed_msg">El post elly kan hena.....te3eesh enta</string>
+    <string name="empty_items">Mafeesh 7aga hena</string>
+    <string name="comic_deleted_msg">Kan fe 7aga hena wera7et</string>
+
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="share">Share</string>
+
+    <string name="credits">Credits</string>
+    <string name="credits_description">This page contains credits for some content used in this app</string>
+
+    <!-- Credits -->
+    <string name="credit_dislike_icon" translatable="false">Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC 3.0 BY</a></string>
+    <string name="credit_comment_icon" translatable="false">Icon made by <a href="https://www.flaticon.com/authors/catalin-fertu" title="Catalin Fertu">Catalin Fertu</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC 3.0 BY</a></string>
+    <string name="credit_sweep_icon" translatable="false">Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC 3.0 BY</a></string>
+    <string name="credit_cup_icon" translatable="false">Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC 3.0 BY</a></string>
+    <string name="credit_star_icon" translatable="false">Icon made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC 3.0 BY</a></string>
+    <string name="credit_new_icon" translatable="false">Icon made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC 3.0 BY</a></string>
+    <string name="credit_credits_icon" translatable="false">Icon made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank" title="Creative Commons BY 3.0">CC 3.0 BY</a></string>
+
+    <string name="add_credits_hint">Esm elly 3amel elsora (Optional)</string>
+    <string name="optional">(Optional)</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="exit_confirmation">Mota2aked enak 3awez tokhrog?</string>
+    <string name="comic_like_failed_msg">Failed to like post: check network connection</string>
+    <string name="comic_dislike_failed_msg">Failed to dislike post: check network connection</string>
+    <string name="reported_comics">Reported Comics</string>
+    <string name="reported_comments">Reported Comments</string>
+
+    <string name="allow">Allow</string>
+    <string name="nothing">Nothing</string>
+    <string name="warn">Warn</string>
+    <string name="block_week">Block for a week</string>
+    <string name="block_month">Block for a month</string>
+    <string name="release">Release</string>
+    <string name="set_next_time">Set waiting hours</string>
+    <string name="release_confirmation">Mota2aked enak 3awez te3mel release?</string>
+    <string name="featured_msg_default">Check out the new Top Posts ;)</string>
+    <string name="tutorial_swipe_hor_header">Swipe left or right to move between posts</string>
+    <string name="tutorial_swipe_ver_header">Swipe up to show comments</string>
+    <string name="lets_fun_it">Let\'s fun it xD</string>
+    <string name="tutorial_double_tap">Double tap a post to like</string>
+    <string name="featured_end_header">Kol youm haykoon feh Top Posts gedeeda</string>
+    <string name="swipe">Swipe</string>
+    <string name="top_posts">Top Posts</string>
+    <string name="or_goto">Aw etfarag 3ala</string>
+    <string name="le">le</string>
+    <string name="aktar">aktar</string>
+    <string name="free_some_space">Me7tag tefady mesa7a</string>
+    <string name="leaderboard">Leaderboard</string>
+
+    <string name="followers_count"><xliff:g id="count">%1$s</xliff:g> followers</string>
+    <string name="leaderboard_tab_weekly">Weekly</string>
+    <string name="leaderboard_tab_all_time">All time</string>
+    <string name="leaderboard_weekly_desc">Aktar nas gayba likes fel esboo3 da</string>
+    <string name="leaderboard_allTime_desc">Aktar nas gayba likes since the Big Bang</string>
+    <string name="updates_title">Eh El Gedeed?</string>
+    <string name="tamam">Tamam</string>
+    <string name="leaderboard_feature_desc">Leaderboard te2dar teshof feha a3la nas gayba likes</string>
+    <string name="hide">Hide</string>
+    <string name="someone">Someone</string>
+    <string name="user_not_registered">El user da mesh registered</string>
+    <string name="tab_newest">Newest</string>
+    <string name="tab_featured">Top</string>
+    <string name="leaderboard_top_users_header">Top users of last week</string>
+    <string name="tab_pending_featured">Pending F</string>
+    <string name="tags_description">El tags be tewsef el post aktar\nEx: Salah, Cat, Ferrari...etc</string>
+    <string name="tag">tag</string>
+    <string name="post_category_selection_title">Category</string>
+    <string name="post_category_selection_description">Ekhtar category lel post beta3ak</string>
+    <string name="categories">Categories</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/et_large_height"
+    android:background="@color/backgroundLight"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/margin_medium"
+    android:paddingRight="@dimen/margin_small">
+
+    <EditText
+        android:id="@+id/et_comments_newComment"
+        style="@style/Text_Body1_Regular_Light"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/margin_small"
+        android:gravity="start|center_vertical"
+        android:textDirection="firstStrong"
+        android:textAlignment="textStart"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:hint="@string/comment_hint"
+        android:imeOptions="actionDone"
+        android:maxLength="@integer/comment_max_length"
+        android:maxLines="@integer/comment_max_lines" />
+
+    <ImageButton
+        android:id="@+id/ib_comments_commentAdd"
+        android:layout_width="@dimen/ic_size_default"
+        android:layout_height="@dimen/ic_size_default"
+        android:background="@color/transparent"
+        app:srcCompat="@drawable/ic_send" />
+</LinearLayout>

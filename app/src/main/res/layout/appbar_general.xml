@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appbar_general"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:elevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/background"
+            android:layoutDirection="ltr"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <TextView
+            android:id="@+id/tv_toolbar_general_title"
+            style="@style/Text_Header3_Bold_Sec_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:text="Main" />
+
+        <ImageButton
+            android:id="@+id/ib_toolbar_general_back"
+            android:layout_width="@dimen/ic_size_default"
+            android:layout_height="@dimen/ic_size_default"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_small"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_chevron_left" />
+
+        <ImageButton
+            android:id="@+id/ib_toolbar_general_options"
+            android:layout_width="@dimen/ic_size_default"
+            android:layout_height="@dimen/ic_size_default"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_small"
+            android:background="@color/transparent"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_options_white70" />
+    </RelativeLayout>
+
+</com.google.android.material.appbar.AppBarLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingTop="@dimen/margin_large">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_navView_userPhoto"
+                    android:layout_width="@dimen/civ_size_x_large"
+                    android:layout_height="@dimen/civ_size_x_large"
+                    android:padding="@dimen/civ_borderWidth_default"
+                    android:background="@drawable/shape_circle_border_white"/>
+
+                <ImageView
+                    android:id="@+id/iv_navView_profileNotifIcon"
+                    android:layout_width="@dimen/notif_icon_size"
+                    android:layout_height="@dimen/notif_icon_size"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_circle_red"
+                    android:layout_alignRight="@id/iv_navView_userPhoto"
+                    android:layout_alignTop="@id/iv_navView_userPhoto"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_navView_userName"
+                style="@style/Text_Body1_Bold_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textColor="@color/white"
+                tools:text="Mahmoud Ali" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/switch_navView_testEnable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            style="@style/Text_Body3_Regular_Light"
+            android:textColor="@color/white_op70"
+            android:text="Enable test"/>
+
+        <Switch
+            android:id="@+id/switch_navView_engagementUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/margin_medium"
+            style="@style/Text_Body3_Regular_Light"
+            android:textColor="@color/white_op70"
+            android:text="Engagement users"/>
+
+        <LinearLayout
+            android:id="@+id/layout_navView_addNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@drawable/shape_rect_rounded_stroke_white87"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_small"
+            android:paddingLeft="@dimen/margin_medium"
+            android:paddingRight="@dimen/margin_medium"
+            android:paddingTop="@dimen/margin_small">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                app:srcCompat="@drawable/ic_plus_accent" />
+
+            <TextView
+                style="@style/Text_Body1_Bold_Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:textColor="@color/colorAccent"
+                android:text="@string/add_new" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_navView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:clipToPadding="false"
+            android:scrollbarStyle="outsideOverlay" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/divider_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_semi_medium"
+        android:paddingTop="@dimen/margin_semi_medium">
+
+        <ImageView
+            android:id="@+id/iv_navViewItem_icon"
+            android:layout_width="@dimen/ic_size_xxx_small"
+            android:layout_height="@dimen/ic_size_xxx_small"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:visibility="gone"
+            tools:srcCompat="@drawable/ic_new_inactive"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_navViewItem_name"
+            style="@style/Text_Body1_Bold_Sec_Light"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/iv_navViewItem_icon"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_medium"
+            tools:text="Featured" />
+
+        <ImageView
+            android:id="@+id/iv_navViewItem_notifIcon"
+            android:layout_width="@dimen/notif_icon_size"
+            android:layout_height="@dimen/notif_icon_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_large"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_circle_red"
+            tools:visibility="visible" />
+
+        <TextView
+        android:id="@+id/tv_navViewItem_stopWatch"
+        style="@style/Text_Body1_Bold_Sec2_Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_large"
+        android:textColor="@color/white_op25"
+        android:visibility="gone"
+        tools:text="04:15:20"
+        tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_navViewItem_new_count"
+            style="@style/Text_Body1_Regular_Light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginLeft="@dimen/margin_medium"
+            android:layout_centerVertical="true"
+            android:textColor="@color/red"
+            android:visibility="gone"
+            tools:text="12"
+            tools:visibility="visible" />
+    </RelativeLayout>
+</LinearLayout>

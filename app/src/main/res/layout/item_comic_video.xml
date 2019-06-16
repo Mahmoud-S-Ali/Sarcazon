@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_comic_videoRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_semi_medium"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/content_comic_poster_info"
+        android:background="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/tv_comic_caption"
+        style="@style/Text_Body1_Bold_Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundLight"
+        android:lineSpacingExtra="@dimen/line_spacing_medium"
+        android:gravity="start|center_vertical"
+        android:paddingBottom="@dimen/margin_small"
+        android:textDirection="firstStrong"
+        android:textAlignment="textStart"
+        android:paddingLeft="@dimen/margin_semi_large"
+        android:paddingRight="@dimen/margin_semi_large"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="Once upon a time, I was walking in the street" />
+
+    <RelativeLayout
+        android:id="@+id/layout_comic_videoParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <WebView
+            android:id="@+id/webview_comic_fbHack"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="invisible" />
+
+        <com.google.android.exoplayer2.ui.AspectRatioFrameLayout
+            android:id="@+id/arflayout_player_aspectRatio"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            app:resize_mode="fixed_width"
+            android:layout_height="wrap_content">
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/player_comic_contentVideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                app:resize_mode="fit"
+                app:surface_type="surface_view"
+                app:use_controller="false">
+
+                <com.joyapeak.sarcazon.ui.custom.CustomHeightImageView
+                    android:id="@+id/iv_comic_videoThumbnail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter" />
+            </com.google.android.exoplayer2.ui.PlayerView>
+        </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+
+
+        <ProgressBar
+            android:id="@+id/progressbar_comic_loading"
+            android:layout_width="@dimen/ic_size_large"
+            android:layout_height="@dimen/ic_size_large"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_circle_black_transparent"
+            android:indeterminateDrawable="@drawable/progressbar_background"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/ib_comic_videoPlayIcon"
+            android:layout_width="@dimen/ic_size_large"
+            android:layout_height="@dimen/ic_size_large"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_circle_black_transparent"
+            android:paddingLeft="2dp"
+            android:scaleType="center"
+            app:srcCompat="@drawable/ic_play" />
+
+        <FrameLayout
+            android:id="@+id/layout_comic_likeImage"
+            android:layout_width="@dimen/likeImage_size"
+            android:layout_height="@dimen/likeImage_size"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/margin_medium"
+            android:background="@drawable/shape_circular_gradient"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/iv_comic_likeImage"
+                android:layout_width="@dimen/likeImage_size"
+                android:layout_height="@dimen/likeImage_size"
+                app:srcCompat="@drawable/ic_like_active" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/content_comic_actions" />
+</LinearLayout>

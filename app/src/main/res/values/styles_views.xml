@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--*********************** Text Styles ***************************-->
+
+    <!-- *********** Body Regular Base *********** -->
+    <style name="Text_Regular_Base">
+        <item name="fontPath">fonts/Helvetica-Regular.ttf</item>
+    </style>
+
+    <!-- *********** Body Bold Base *********** -->
+    <style name="Text_Bold_Base">
+        <item name="fontPath">fonts/Helvetica-Bold.ttf</item>
+    </style>
+
+
+    <!-- *********** Header 1 Regular *********** -->
+    <style name="Text_Header1_Regular_Light" parent="Text_Regular_Base">
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_header1</item>
+    </style>
+
+    <style name="Text_Header1_Regular_Sec_Light" parent="Text_Regular_Base">
+        <item name="android:textColor">@color/white_op70</item>
+        <item name="android:textSize">@dimen/text_size_header1</item>
+    </style>
+
+    <!-- *********** Header 1 Bold *********** -->
+    <style name="Text_Header1_Bold_Light" parent="Text_Bold_Base">
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_header1</item>
+    </style>
+
+    <style name="Text_Header1_Bold_Sec_Light" parent="Text_Bold_Base">
+        <item name="android:textColor">@color/white_op70</item>
+        <item name="android:textSize">@dimen/text_size_header1</item>
+    </style>
+
+
+    <!-- *********** Header 2 Regular *********** -->
+    <style name="Text_Header2_Regular_Light" parent="Text_Regular_Base">
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_header2</item>
+    </style>
+
+    <style name="Text_Header2_Regular_Sec_Light" parent="Text_Regular_Base">
+        <item name="android:textColor">@color/white_op70</item>
+        <item name="android:textSize">@dimen/text_size_header2</item>
+    </style>
+
+    <!-- *********** Header 2 Bold *********** -->
+    <style name="Text_Header2_Bold_Light" parent="Text_Bold_Base">
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_header2</item>
+    </style>
+
+    <style name="Text_Header2_Bold_Sec_Light" parent="Text_Bold_Base">
+        <item name="android:textColor">@color/white_op70</item>
+        <item name="android:textSize">@dimen/text_size_header2</item>
+    </style>
+
+
+    <!-- *********** Header 3 Regular *********** -->
+    <style name="Text_Header3_Regular_Light" parent="Text_Regular_Base">
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_header3</item>
+    </style>
+
+    <style name="Text_Header3_Regular_Sec_Light" parent="Text_Regular_Base">
+        <item name="android:textColor">@color/white_op70</item>
+        <item name="android:textSize">@dimen/text_size_header3</item>
+    </style>
+
+    <!-- *********** Header 3 Bold *********** -->
+    <style name="Text_Header3_Bold_Light" parent="Text_Bold_Base">
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_header3</item>
+    </style>
+
+    <style name="Text_Header3_Bold_Sec_Light" parent="Text_Bold_Base">
+        <item name="android:textColor">@color/white_op70</item>
+        <item name="android:textSize">@dimen/text_size_header3</item>
+    </style>
+
+
+    <!-- *********** Body 1 Regular *********** -->
+    <style name="Text_Body1_Regular_Light" parent="Text_Regular_Base">
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_body1</item>
+    </style>
+
+    <style name="Text_Body1_Regular_Sec_Light" parent="Text_Body1_Regular_Light">
+        <item name="android:textColor">@color/white_op70</item>
+    </style>
+
+    <style name="Text_Body1_Regular_Sec2_Light" parent="Text_Body1_Regular_Light">
+        <item name="android:textColor">@color/white_op50</item>
+    </style>
+
+
+    <!-- *********** Body 1 Bold *********** -->
+    <style name="Text_Body1_Bold_Light" parent="Text_Bold_Base">
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_body1</item>
+    </style>
+
+    <style name="Text_Body1_Bold_Sec_Light" parent="Text_Body1_Bold_Light">
+        <item name="android:textColor">@color/white_op70</item>
+    </style>
+
+    <style name="Text_Body1_Bold_Sec2_Light" parent="Text_Body1_Bold_Light">
+        <item name="android:textColor">@color/white_op50</item>
+    </style>
+
+
+    <!-- *********** Body 2 Regular *********** -->
+    <style name="Text_Body2_Regular_Light" parent="Text_Regular_Base">
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_body2</item>
+    </style>
+
+    <style name="Text_Body2_Regular_Sec_Light" parent="Text_Body2_Regular_Light">
+        <item name="android:textColor">@color/white_op70</item>
+    </style>
+
+    <style name="Text_Body2_Regular_Sec2_Light" parent="Text_Body2_Regular_Light">
+        <item name="android:textColor">@color/white_op50</item>
+    </style>
+
+
+    <!-- *********** Body 2 Bold *********** -->
+    <style name="Text_Body2_Bold_Light" parent="Text_Bold_Base">
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_body2</item>
+    </style>
+
+    <style name="Text_Body2_Bold_Sec_Light" parent="Text_Body2_Bold_Light">
+        <item name="android:textColor">@color/white_op70</item>
+    </style>
+
+    <style name="Text_Body2_Bold_Sec2_Light" parent="Text_Body2_Bold_Light">
+        <item name="android:textColor">@color/white_op50</item>
+    </style>
+
+
+    <!-- *********** Body 3 Regular *********** -->
+    <style name="Text_Body3_Regular_Light" parent="Text_Regular_Base">
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_body3</item>
+    </style>
+
+    <style name="Text_Body3_Regular_Sec_Light" parent="Text_Body3_Regular_Light">
+        <item name="android:textColor">@color/white_op70</item>
+    </style>
+
+    <style name="Text_Body3_Regular_Sec2_Light" parent="Text_Body3_Regular_Light">
+        <item name="android:textColor">@color/white_op50</item>
+    </style>
+
+
+    <!-- *********** Body 3 Bold *********** -->
+    <style name="Text_Body3_Bold_Light" parent="Text_Bold_Base">
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_body3</item>
+    </style>
+
+    <style name="Text_Body3_Bold_Sec_Light" parent="Text_Body3_Bold_Light">
+        <item name="android:textColor">@color/white_op70</item>
+    </style>
+
+    <style name="Text_Body3_Bold_Sec2_Light" parent="Text_Body3_Bold_Light">
+        <item name="android:textColor">@color/white_op50</item>
+    </style>
+
+
+    <!-- *********** Caption *********** -->
+    <style name="Text_Caption_Regular_Light">
+        <item name="fontPath">fonts/Helvetica-Regular.ttf</item>
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_caption</item>
+    </style>
+
+    <style name="Text_Caption_Bold_Light">
+        <item name="fontPath">fonts/Helvetica-Bold.ttf</item>
+        <item name="android:textColor">@color/white_op87</item>
+        <item name="android:textSize">@dimen/text_size_caption</item>
+    </style>
+
+
+
+    <!-- Button -->
+
+    <style name="BtnRounded" parent="Text_Body1_Bold_Light">
+        <item name="android:layout_height">@dimen/btn_rounded_width</item>
+        <item name="android:layout_width">@dimen/btn_rounded_height</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/shape_rect_rounded_parimary_light</item>
+    </style>
+
+</resources>

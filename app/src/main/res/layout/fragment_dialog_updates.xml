@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_large">
+
+        <ImageView
+            android:id="@+id/iv_updatesDialog_img"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/tv_updatesDialog_featureTitle"
+            style="@style/Text_Header2_Regular_Light"
+            android:textColor="@color/white"
+            tools:text="Facebook Videos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_medium" />
+
+        <TextView
+            android:id="@+id/tv_updatesDialog_featureDesc"
+            style="@style/Text_Body1_Regular_Sec_Light"
+            tools:text="Leaderboard te2dar teshof feha men gayeb a3la likes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_small"
+            android:gravity="center" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nsv_leaderboard"
+    android:layout_width="@dimen/custom_match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_width="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_leaderboard_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/ic_size_large"
+            android:layout_height="@dimen/ic_size_large"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            app:srcCompat="@drawable/ic_trophy_active" />
+
+        <TextView
+            android:id="@+id/tv_leaderboard_pageDesc"
+            style="@style/Text_Body1_Regular_Sec_Light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:gravity="center"
+            tools:text="A3la nas gayba likes 3ala madar el esboo3" />
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="1dp"
+            android:background="@color/white_op12"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_medium"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_leaderboard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="24dp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="@dimen/margin_medium"
+                android:scrollbarStyle="outsideOverlay" />
+
+            <include layout="@layout/layout_empty_items" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/custom_match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:layout_width="match_parent">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card-view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        card-view:cardBackgroundColor="@color/backgroundLight"
+        card-view:cardCornerRadius="@dimen/radius_large"
+        card-view:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:layoutDirection="ltr"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dialog_padding_vertical">
+
+            <TextView
+                android:id="@+id/tv_dialog_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dialog_padding_horizontal"
+                android:layout_marginRight="@dimen/dialog_padding_horizontal"
+                style="@style/Text_Body1_Bold_Light"
+                android:textColor="@color/white"
+                tools:text="el link mesh shaghala " />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_dialog_no"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@color/transparent"
+                    android:text="@string/no"
+                    android:textColor="@color/colorAccent" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:background="@color/white_op12"/>
+
+                <Button
+                    android:id="@+id/btn_dialog_yes"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@color/transparent"
+                    android:text="@string/yes"
+                    android:textColor="@color/white_op87" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>
